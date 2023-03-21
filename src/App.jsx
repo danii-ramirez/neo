@@ -1,3 +1,4 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import NavBar from "./Components/NavBar";
 import { ItemListContainer } from "./Components/ItemListContainer";
 
@@ -5,9 +6,11 @@ function App() {
   return (
     <>
       <NavBar />
-      <main className="container">
-        <ItemListContainer greeting="Bienevidos a Neo" />
-      </main>
+      <BrowserRouter>
+        <Routes>
+          <Route exact path="/catalogo" element={<ItemListContainer />} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }
