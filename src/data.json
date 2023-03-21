@@ -1,0 +1,42 @@
+[
+  {
+    "id": "01",
+    "name": "Notebook Asus",
+    "description": "Notebook Asus i7",
+    "category": "Notebook",
+    "price": 100,
+    "stock": 3
+  },
+  {
+    "id": "02",
+    "name": "Samsung A30",
+    "description": "Celular Samsung A30",
+    "categoria": "Celular",
+    "price": 30,
+    "stock": 10
+  },
+  {
+    "id": "03",
+    "name": "Cargador Samsung",
+    "description": "Cargador de celular Samsung",
+    "categoria": "Cargador",
+    "price": 5,
+    "stock": 20
+  },
+  {
+    "id": "04",
+    "name": "Motorola J20",
+    "description": "Celular Motorola J20",
+    "categoria": "Celular",
+    "price": 35,
+    "stock": 8
+  },
+  {
+    "id": "05",
+    "name": "Cargador Motorola",
+    "description": "Cargador de celular Motorola",
+    "categoria": "Cargador",
+    "price": 7,
+    "stock": 13
+  }
+]

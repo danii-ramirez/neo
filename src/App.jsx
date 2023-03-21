@@ -1,15 +1,13 @@
-import { Spinner, Stack } from "@chakra-ui/react";
+import NavBar from "./Components/NavBar";
+import { ItemListContainer } from "./Components/ItemListContainer";
 
 function App() {
   return (
     <>
-      <Stack direction="row" spacing={4}>
-        <Spinner size="xs" />
-        <Spinner size="sm" />
-        <Spinner size="md" />
-        <Spinner size="lg" />
-        <Spinner size="xl" />
-      </Stack>
+      <NavBar />
+      <main className="container">
+        <ItemListContainer greeting="Bienevidos a Neo" />
+      </main>
     </>
   );
 }
