@@ -23,27 +23,17 @@ const NavBar = () => {
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
               <a className="nav-link" href="#">
-                Productos
+                Notebook
               </a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#">
-                Placa de video
+                Celulares
               </a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#">
-                Procesador
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">
-                Memoria RAM
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">
-                Fuentes
+                Cargadores
               </a>
             </li>
           </ul>
