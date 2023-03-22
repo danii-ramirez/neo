@@ -6,9 +6,7 @@ const NavBar = () => {
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
       <div className="container-fluid">
-        <a className="navbar-brand" href="#">
-          Neo
-        </a>
+        <NavLink to={"/"}>Neo</NavLink>
         <button
           className="navbar-toggler"
           type="button"
@@ -23,7 +21,7 @@ const NavBar = () => {
         <div className="collapse navbar-collapse" id="navbarText">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <NavLink to={"/catalogo"}>Notebook</NavLink>
+              <NavLink to={"/productos"}>Productos</NavLink>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#">
