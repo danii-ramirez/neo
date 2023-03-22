@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { CartWidget } from "./CartWidget";
 
 const NavBar = () => {
@@ -24,10 +24,6 @@ const NavBar = () => {
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
               <NavLink to={"/catalogo"}>Notebook</NavLink>
-
-              {/* <a className="nav-link" href="/catalogo">
-                Notebook
-              </a> */}
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#">

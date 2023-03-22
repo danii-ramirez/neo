@@ -5,8 +5,8 @@ import { ItemListContainer } from "./Components/ItemListContainer";
 function App() {
   return (
     <>
-      <NavBar />
       <BrowserRouter>
+        <NavBar />
         <Routes>
           <Route exact path="/catalogo" element={<ItemListContainer />} />
         </Routes>
