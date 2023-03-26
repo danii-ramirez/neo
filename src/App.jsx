@@ -5,12 +5,14 @@ import { ItemListContainer } from "./Components/ItemListContainer";
 function App() {
   return (
     <>
-      <BrowserRouter>
+      <NavBar />
+
+      {/* <BrowserRouter>
         <NavBar />
         <Routes>
           <Route exact path="/productos" element={<ItemListContainer />} />
         </Routes>
-      </BrowserRouter>
+      </BrowserRouter> */}
     </>
   );
 }
