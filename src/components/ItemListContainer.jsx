@@ -1,9 +1,51 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { Wrap, WrapItem } from "@chakra-ui/react";
+import ItemList from "./ItemList";
+import { useParams } from "react-router-dom";
 
-export const ItemListContainer = () => {
+const ItemListContainer = () => {
+  const getProducts = async () => {
+    const response = await fetch("https://fakestoreapi.com/products");
+    return await response.json();
+  };
+
+  const getProductsByCategory = async () => {
+    const response = await fetch(
+      `https://fakestoreapi.com/products/category/${category}`
+    );
+    return await response.json();
+  };
+
+  const [products, setProducts] = useState([]);
+  const { category } = useParams();
+
+  useEffect(() => {
+    if (category === undefined) {
+      getProducts().then((data) => setProducts(data));
+    } else {
+      getProductsByCategory().then((data) => setProducts(data));
+    }
+  }, [category]);
+
   return (
-    <div>
-      <h1 className="text-center mt-4">hola</h1>
-    </div>
+    <>
+      <Wrap>
+        {products.map((prod) => {
+          return (
+            <WrapItem key={prod.id}>
+              <ItemList
+                id={prod.id}
+                title={prod.title}
+                image={prod.image}
+                category={prod.category}
+                count={prod.rating.count}
+              />
+            </WrapItem>
+          );
+        })}
+      </Wrap>
+    </>
   );
 };
+
+export default ItemListContainer;
