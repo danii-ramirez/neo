@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
 import { Wrap, WrapItem } from "@chakra-ui/react";
 import ItemList from "./ItemList";
-import { useParams } from "react-router-dom";
 
 const ItemListContainer = () => {
   const getProducts = async () => {
@@ -18,6 +18,7 @@ const ItemListContainer = () => {
 
   const [products, setProducts] = useState([]);
   const { category } = useParams();
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     if (category === undefined) {
