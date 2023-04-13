@@ -45,7 +45,7 @@ const NavBar = () => {
               {categories.map((cat) => {
                 return (
                   <Link key={cat} to={`/category/${cat}`}>
-                    <MenuItem >{cat}</MenuItem>
+                    <MenuItem>{cat}</MenuItem>
                   </Link>
                 );
               })}
